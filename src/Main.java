@@ -9,6 +9,10 @@ public class Main {
 
         tc.chooseLetter();
 
+        tc.showBoard();
+
+        tc.playerTurn();
+
     }
 
 

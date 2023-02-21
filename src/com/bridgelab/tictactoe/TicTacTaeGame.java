@@ -51,5 +51,27 @@ public class TicTacTaeGame {
 
 
     }
+    public void playerTurn()
+    {
+        int playerMove;
 
+        while (true)
+        {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Choose your location(1-9): ");
+
+            playerMove = scanner.nextInt();
+
+            if (board[playerMove] == ' ')
+            {
+                break;
+            }
+
+        }
+
+        System.out.println("Player choose:: " + playerMove);
+
+        board[playerMove] = chooseLetter;
+    }
 }
