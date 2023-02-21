@@ -1,5 +1,9 @@
+import com.bridgelab.tictactoe.TicTacTaeGame;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        TicTacTaeGame tc=new TicTacTaeGame();
+        tc.createBoard();
+
     }
 }
