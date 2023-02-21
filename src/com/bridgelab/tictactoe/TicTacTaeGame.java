@@ -97,4 +97,35 @@ public class TicTacTaeGame {
             System.out.println("Free space is available! you have "+numOfFreeSpaces+ " moves left");
         }
     }
+
+    public void checkFirstPlayer()
+    {
+        int Head = 0;
+
+        double toss = Math.floor(Math.random()*10) % 2;
+
+        if ( toss == Head )
+        {
+            System.out.println("computer starts to play first");
+        }
+        else
+        {
+            System.out.println("User starts to play first");
+        }
+    }
+
+    public  void winner()
+    {
+        if ((board[1] == chooseLetter && board[2] == chooseLetter && board[3] == chooseLetter) ||
+                (board[4] == chooseLetter && board[5] == chooseLetter && board[6] == chooseLetter) ||
+                (board[7] == chooseLetter && board[8] == chooseLetter && board[9] == chooseLetter) ||
+                (board[1] == chooseLetter && board[5] == chooseLetter && board[9] == chooseLetter) ||
+                (board[3] == chooseLetter && board[5] == chooseLetter && board[7] == chooseLetter))
+        {
+            showBoard();
+            System.out.println("Player win the game");
+            System.exit(0);
+        }
+    }
+
 }

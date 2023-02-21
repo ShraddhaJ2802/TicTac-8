@@ -15,6 +15,8 @@ public class Main {
 
         tc.checkFreeSpace();
 
+        tc.checkFirstPlayer();
+
     }
 
 
