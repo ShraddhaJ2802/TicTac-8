@@ -13,6 +13,8 @@ public class Main {
 
         tc.playerTurn();
 
+        tc.checkFreeSpace();
+
     }
 
 
