@@ -123,9 +123,30 @@ public class TicTacTaeGame {
                 (board[3] == chooseLetter && board[5] == chooseLetter && board[7] == chooseLetter))
         {
             showBoard();
+
             System.out.println("Player win the game");
+
             System.exit(0);
         }
+    }
+
+    public void computerTurn()
+    {
+        int computerMove;
+
+        while (true)
+        {
+            computerMove = (int) Math.floor(Math.random() * 10) % 9 + 1;
+
+            if (board[computerMove] == ' ')
+            {
+                break;
+            }
+
+        }
+        System.out.println("Computer choose:: " + computerMove);
+
+        board[computerMove] = computerLetter;
     }
 
 }
